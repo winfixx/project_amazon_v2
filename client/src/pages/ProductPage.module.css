@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+
+    height: calc(100vh - 100px);
+    width: calc(100% - 230px);
+
+    padding-top: 20px;
+    background-color: #FFFFFF;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.name {
+    font-size: 22px;
+    margin-bottom: 5px3
+}
+
+.body {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.description {
+    margin-left: 40px;
+    border-bottom: 1px solid #E6E6E8;
+}
+
+.infos {
+    display: flex;
+    width: 500px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.infos>h4 {
+    margin-right: 30px;
+    color: #3b3b3b;
+    font-weight: 500;
+    width: 50%;
+}
+
+.infos>p {
+    text-align: left;
+    color: #414141;
+    font-weight: bold;
+    width: 50%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 50px;
+    padding: 0 10px 10px 10px;
+    box-shadow: 2px 5px 10px 0 rgba(80, 80, 80, 0.1);
+}
+
+.buttons>div {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.icons {
+    color: #FF9900;
+    font-size: 30px;
+    text-decoration: none;
+
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.price {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.price>b {
+    font-size: 22px;
+}

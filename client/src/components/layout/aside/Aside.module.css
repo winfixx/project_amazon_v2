@@ -1,0 +1,53 @@
+.aside {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 5px 1px 30px 0px rgba(80, 80, 80, 0.1);
+    height: calc(100vh - 80px);
+    width: 200px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F6F6F6;
+
+    height: 70px;
+}
+
+.back>span {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color .1s linear;
+}
+
+.back>span:hover {
+    color: #5a5555;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #F6F6F6;
+}
+
+.logout {
+    display: flex;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.logout>img {
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+}
+
+.logout>b {
+    cursor: pointer;
+}

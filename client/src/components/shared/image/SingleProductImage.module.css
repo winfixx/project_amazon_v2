@@ -1,0 +1,30 @@
+.images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 300px;
+    height: 450px;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+}
+
+.scroll__image {
+    display: flex;
+    align-content: center;
+    overflow-x: scroll;
+
+    height: 25%;
+}
+.scroll__image::-webkit-scrollbar {
+    height: 4px;
+}
+.scroll__image::-webkit-scrollbar-thumb {
+    background-color: #FF9900;
+}
+.scroll__image::-webkit-scrollbar-track {
+    background-color: #E6E6E8;
+}

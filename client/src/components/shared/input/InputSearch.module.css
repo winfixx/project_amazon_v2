@@ -1,0 +1,80 @@
+.div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 800px;
+    height: 40px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.input {
+    width: 80%;
+    height: 100%;
+    border: none;
+    border-right: 1px solid #F6F6F6;
+
+    border-radius: 6px 0 0 6px;
+
+    padding-left: 10px;
+}
+
+.input:focus {
+    
+}
+
+.select {
+    display: flex;
+    justify-content: center;
+    border: none;
+
+    width: 20%;
+    height: 100%;
+
+    cursor: pointer;
+}
+
+.select:focus,
+.input:focus {
+    outline: none;
+}
+
+.input,
+.select {
+    color: #000000;
+    -webkit-text-fill-color: #000000;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 40px;
+
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 0 6px 6px 0;
+    transition: all 0.25s linear;
+
+    cursor: pointer;
+}
+
+.button:hover{
+    border: 2px solid #F6F6F6;
+    background-color: #F6F6F6;
+}
+
+.button > img {
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,25 @@
+.shop {
+    display: flex;
+    background-color: #fff;
+    width: calc(100% - 230px);
+    height: calc(100vh - 80px);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 8px;
+
+}
+
+.search {
+    margin: 5px;
+}
+
+.not__found {
+    margin: 10px auto auto 20px;
+
+    font-weight: lighter;
+    font-size: 20px;
+}
