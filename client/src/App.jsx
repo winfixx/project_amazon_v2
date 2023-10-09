@@ -11,7 +11,7 @@ import NavBar from './components/layout/navBar/NavBar'
 
 const App = observer(() => {
   const { user, product } = useContext(Context)
-
+         
   localStorage.getItem(ACCESS_TOKEN) && useCheckAuth(user)
 
   return (
