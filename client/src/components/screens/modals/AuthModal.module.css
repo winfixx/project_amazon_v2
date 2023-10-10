@@ -1,0 +1,56 @@
+.modal {
+    position: absolute;
+    top: 20vh;
+    left: 30vw;
+    right: 30vw;
+    bottom: 30vh;
+    width: 800px;
+    height: 450px;
+
+    color: black;
+    background: rgb(248, 248, 248);
+    border: 2px solid rgb(243, 243, 243);
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px  rgb(189, 186, 186);
+}
+
+.times {
+    display: flex;
+    justify-content: end;
+
+}
+.times > div {
+    margin-right: 10px;
+    margin-top: 2px;
+
+    color: rgb(0, 0, 0);
+    transition: color .2s linear;
+}
+.times > div:hover {
+    color: rgb(255, 63, 63);
+}
+
+.times b {
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 10px;
+}
+
+.logo > img{
+    margin-top: 5px;
+
+    width: 140px;
+    height: 49px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+
+    height: 80%;
+}

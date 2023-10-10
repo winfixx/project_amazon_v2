@@ -1,0 +1,15 @@
+.div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: center;
+
+    margin-top: 10%;
+
+    height: 70%;
+}
+
+.section > p {
+    margin-top: 18%;
+}

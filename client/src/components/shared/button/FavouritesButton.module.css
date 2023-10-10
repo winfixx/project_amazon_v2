@@ -1,0 +1,23 @@
+.button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.span {
+    color: #FF9900;
+    font-size: 25px;
+    cursor: pointer;
+
+    transition: color .1s linear;
+}
+
+.span:hover {
+    color: #fca92e;
+}
+
+.button.absolute{
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: 5px;
+}

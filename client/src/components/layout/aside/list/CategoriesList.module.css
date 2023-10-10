@@ -1,0 +1,36 @@
+.ul {
+    width: 100%;
+    list-style: none;
+    user-select: none;
+    font-size: 16px;
+}
+
+.li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+    cursor: pointer;
+    color: #5a5555;
+    transition: all .2s linear;
+}
+
+.li:hover {
+    color: #000;
+    font-weight: bolder;
+}
+
+.li>span {
+    font-size: 20px;
+}
+
+.li.active {
+    color: #000;
+    font-weight: bolder;
+}
+
+.li.active>span {
+    transform: rotate(90deg);
+}
