@@ -27,21 +27,21 @@ app.use(fileUpload({}))
 app.use(cookieParser())
 app.use('/api', router)
 
-// app.post("/create-payment-intent", async (req, res) => {
-//     const { items } = req.body
+app.post("/create-payment-intent", async (req, res) => {
+    const { items } = req.body
 
-//     const paymentIntent = await stripe.paymentIntents.create({
-//         amount: calculateOrderAmount(items),
-//         currency: "usd",
-//         automatic_payment_methods: {
-//             enabled: true,
-//         },
-//     })
+    const paymentIntent = await stripe.paymentIntents.create({
+        amount: calculateOrderAmount(items),
+        currency: "usd",
+        automatic_payment_methods: {
+            enabled: true,
+        },
+    })
 
-//     res.send({
-//         clientSecret: paymentIntent.client_secret,
-//     })
-// })
+    res.send({
+        clientSecret: paymentIntent.client_secret,
+    })
+})
 
 app.use(errorMiddleware)
 
