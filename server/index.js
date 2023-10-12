@@ -27,7 +27,7 @@ app.use(fileUpload({}))
 app.use(cookieParser())
 app.use('/api', router)
 
-app.post("/create-payment-intent", async (req, res) => {
+app.post("/create-payment-intent", async (req, res, nest) => {
     const { items } = req.body
 
     const paymentIntent = await stripe.paymentIntents.create({
