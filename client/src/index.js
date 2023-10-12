@@ -7,7 +7,7 @@ import UserStore from './store/UserStore'
 import ProductStore from './store/ProductStore'
 import ModalHideStore from './store/ModalHideStore'
 
-export const Context = createContext(null)
+export const Context = createContext()
 
 const queryClient = new QueryClient({
   defaultOptions: {
