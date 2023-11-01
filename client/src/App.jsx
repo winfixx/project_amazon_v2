@@ -21,12 +21,14 @@ const App = observer(() => {
   return (
     <Router>
       <NavBar />
+
       <div
         style={{ display: 'flex', height: '100%' }}
       >
         <Aside product={product} />
         <AppRouter user={user} />
       </div>
+
       <ReactQueryDevtools initialIsOpen={false} />
     </Router >
   )
