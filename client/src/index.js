@@ -19,7 +19,6 @@ const queryClient = new QueryClient({
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-  <React.StrictMode>
     <QueryClientProvider client={queryClient}>
       <Context.Provider value={{
         user: new UserStore(),
@@ -29,5 +28,4 @@ root.render(
         <App />
       </Context.Provider>
     </QueryClientProvider>
-  </React.StrictMode>
 )
