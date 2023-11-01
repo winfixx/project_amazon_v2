@@ -1,6 +1,6 @@
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { observer } from 'mobx-react-lite'
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import AppRouter from './components/routing/AppRouter'
 import useCheckAuth from './hooks/useCheckAuth'
@@ -12,7 +12,11 @@ import NavBar from './components/layout/navBar/NavBar'
 const App = observer(() => {
   const { user, product } = useContext(Context)
 
-  localStorage.getItem(ACCESS_TOKEN) && useCheckAuth(user)
+  useEffect(() => {
+    if (localStorage.getItem(ACCESS_TOKEN)) {
+      useCheckAuth(user)
+    }
+  }, [])
 
   return (
     <Router>
