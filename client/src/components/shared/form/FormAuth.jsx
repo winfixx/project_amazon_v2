@@ -9,7 +9,7 @@ import InputFormAuth from '../input/InputFormAuth'
 import style from './FormAuth.module.css'
 
 const FormAuth = observer(() => {
-    const { handleSubmit, register, reset, formState: { errors } } = useForm({ mode: 'onChange' })
+    const { handleSubmit, register, reset, formState: { errors } } = useForm({ mode: 'onSubmit' })
 
     const location = useLocation()
     const isLoginPath = location.pathname === LOGIN_ROUTE
